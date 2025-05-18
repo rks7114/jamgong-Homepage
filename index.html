@@ -2,80 +2,80 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>잼공페이지 | 스마트 비즈니스 홈페이지</title>
+  <title>잼공 비즈니스 홈페이지</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jamgong.css">
   <style>
     body {
+      font-family: 'Pretendard', sans-serif;
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      padding: 0;
     }
-    header {
-      background-color: #ffffff;
-      border-bottom: 1px solid #ddd;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-weight: bold;
-      font-size: 20px;
-      color: #3b3b3b;
-    }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #555;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #000;
-    }
-    .hero {
+    section {
+      padding: 80px 20px;
       text-align: center;
-      padding: 100px 20px;
     }
-    .hero h1 {
-      font-size: 42px;
-      color: #222;
-    }
-    .hero p {
-      font-size: 20px;
-      color: #666;
-      margin-bottom: 30px;
-    }
-    .hero a {
-      display: inline-block;
+    .btn {
+      background-color: #000;
+      color: #fff;
       padding: 12px 24px;
-      background: #3b3b3b;
-      color: white;
-      border-radius: 5px;
+      border-radius: 8px;
       text-decoration: none;
-      margin: 0 10px;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: bold;
     }
-    .hero a:hover {
-      background: #555;
+    h1, h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      color: #444;
+    }
+    footer {
+      padding: 40px 0;
+      background: #f1f1f1;
+      color: #666;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">JAMPAGE</div>
-    <nav>
-      <a href="#">홈</a>
-      <a href="#">서비스</a>
-      <a href="#">문의</a>
-    </nav>
-  </header>
-
-  <section class="hero">
+  <!-- Hero Section -->
+  <section style="background-color: #f9f9f9;">
     <h1>스마트한 홈페이지, 잼공페이지에서 시작하세요</h1>
     <p>소상공인을 위한 감각적이고 실용적인 웹사이트 템플릿</p>
-    <a href="#">샘플 보기</a>
-    <a href="#">상담 요청</a>
+    <a href="#ai" class="btn">🎧 AI 요약기</a>
+    <a href="#estimate" class="btn">📊 견적 계산기</a>
+    <a href="#form" class="btn">📮 상담 요청</a>
   </section>
+
+  <!-- AI 요약기 Section -->
+  <section id="ai" style="background-color: #fff;">
+    <h2>🎧 자광 AI 음성 요약기</h2>
+    <p>자광의 깊은 해설을 AI가 요약해드립니다.<br>긴 음성을 간결하게, 중요한 메시지를 빠르게 확인하세요.</p>
+    <a href="https://huggingface.co/spaces/jamgong/jamgong-whisper-summary" target="_blank" class="btn">🚀 요약기 실행하기</a>
+  </section>
+
+  <!-- Estimate Section -->
+  <section id="estimate" style="background-color: #f9f9f9;">
+    <h2>📊 AI 홈페이지 견적 계산기</h2>
+    <p>업종과 원하는 기능을 선택하시면, AI가 자동으로 견적과 예상 제작 기간을 안내드립니다.</p>
+    <a href="form.html" class="btn">🧾 견적 계산하러 가기</a>
+  </section>
+
+  <!-- Form Section -->
+  <section id="form" style="background-color: #fff;">
+    <h2>📮 상담 요청</h2>
+    <p>잼공페이지가 궁금하신가요?<br>필요한 서비스와 예상 견적을 안내해 드립니다.</p>
+    <a href="https://forms.gle/1FAIpQLSfB_YnlKT4XZJNK4OirsDAIyEGMQHCzkPj5P2dAp2abH7FXgw" target="_blank" class="btn">📝 상담 요청하기</a>
+  </section>
+
+  <footer>
+    <p>© 2025 잼공 비즈니스 | jamgong.kr</p>
+  </footer>
 
 </body>
 </html>
